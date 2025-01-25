@@ -1,0 +1,29 @@
+---
+- name: "Install Neovim"
+  become: yes
+  become_method: sudo
+  apt:
+    name: neovim
+    state: present
+
+- name: "Install tmux"
+  become: yes
+  become_method: sudo
+  apt:
+    name: tmux
+    state: present
+
+- name: "Install curl (for wget, etc.)"
+  become: yes
+  become_method: sudo
+  apt:
+    name: curl
+    state: present
+
+- name: "Install Terminator"
+  become: yes
+  become_method: sudo
+  apt:
+    name: terminator
+    state: present
+
